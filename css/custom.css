@@ -11,6 +11,47 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/* Target the specific list or use globally */
+
+ol.scrollable-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px; /* Thickness of the vertical scrollbar */
+}
+
+ol.scrollable-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the tracking area */
+}
+
+ol.scrollable-list::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the draggable scroll handle */
+  border-radius: 4px;
+}
+
+ol.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
+}
+
+
+
+ul.scrollable-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 8px; /* Thickness of the vertical scrollbar */
+}
+
+ul.scrollable-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the tracking area */
+}
+
+ul.scrollable-list::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the draggable scroll handle */
+  border-radius: 4px;
+}
+
+ul.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
