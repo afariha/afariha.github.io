@@ -13,11 +13,25 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Anna Fariha, Assistant Professor at the Kahlert School of Computing, University of Utah. Research on usability and explainability of data systems.">
+    <meta name="description" content="Assistant Professor at the Kahlert School of Computing, University of Utah. I build human-centered data systems that make working with data easier for everyone.">
     <meta name="author" content="Anna Fariha">
     <meta name="robots" content="noai, noimageai">
 
     <title>Anna Fariha</title>
+    <link rel="canonical" href="https://afariha.github.io/">
+
+    <!-- Link previews (Slack, LinkedIn, X, email) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Anna Fariha">
+    <meta property="og:title" content="Anna Fariha">
+    <meta property="og:description" content="Assistant Professor at the Kahlert School of Computing, University of Utah. I build human-centered data systems that make working with data easier for everyone.">
+    <meta property="og:url" content="https://afariha.github.io/">
+    <meta property="og:image" content="https://afariha.github.io/img/profile.jpg">
+    <meta property="og:image:alt" content="Photo of Anna Fariha">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Anna Fariha">
+    <meta name="twitter:description" content="Assistant Professor at the Kahlert School of Computing, University of Utah. I build human-centered data systems that make working with data easier for everyone.">
+    <meta name="twitter:image" content="https://afariha.github.io/img/profile.jpg">
     <link rel="icon" type="image/png" href="img/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +70,10 @@
                 <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
             </button>
             <button class="aurora-toggle" type="button" aria-label="Toggle aurora background" title="Toggle aurora background" aria-pressed="false">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/><path d="M18.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/><path d="M5.5 15.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21l15-15-3-3-15 15 3 3"/><path d="M15 6l3 3"/><path d="M9 3a2 2 0 0 0 2 2 2 2 0 0 0-2 2 2 2 0 0 0-2-2 2 2 0 0 0 2-2"/><path d="M19 13a2 2 0 0 0 2 2 2 2 0 0 0-2 2 2 2 0 0 0-2-2 2 2 0 0 0 2-2"/></svg>
+            </button>
+            <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" title="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="bars" d="M4 7h16M4 12h16M4 17h16"/><path class="close" d="M6 6l12 12M18 6L6 18"/></svg>
             </button>
             </div>
         </div>
@@ -878,7 +895,7 @@
 						
 	                    <li><span>
                             Nishant Yadav<sup>*</sup>, Matteo Brucato<sup>*</sup>, <strong>Anna Fariha<sup>*</sup></strong>, Oscar Youngquist, Julian Killingback, <a class="author" target="_blank" href="https://people.cs.umass.edu/~ameli/">Alexandra Meliou</a>, <a class="author" target="_blank" href="https://people.cs.umass.edu/~phaas/">Peter J. Haas</a>:
-							<br/><em>SubSumE: A Dataset for Subjective Summary Extraction from Wikipedia Documents.</em> <span class="kind">Workshop paper</span>
+							<br/><em><a target="_blank" href="https://aclanthology.org/2021.newsum-1.14/">SubSumE: A Dataset for Subjective Summary Extraction from Wikipedia Documents.</a></em> <span class="kind">Workshop paper</span>
 							<br/><span class="venue">NewSum@EMNLP</span> <span class="year">2021</span>		
 							<a target="_blank" href="papers/SubSumE_EMNLP_NewSUM_2021.pdf" title="PDF"><img class="icon" src="img/icons/pdf.svg"></a>							
 							<a target="_blank" href="https://github.com/afariha/SubSumE" title="Dataset"><img class="icon" src="img/icons/dataset.svg"></a>														
@@ -1282,6 +1299,18 @@
     </footer>
 
     <script>
+        // Phone menu: open/close the link list, and close it after a link is chosen
+        var nav = document.querySelector('.site-nav'), menuBtn = document.querySelector('.menu-toggle');
+        menuBtn.addEventListener('click', function () {
+            var open = nav.classList.toggle('menu-open');
+            menuBtn.setAttribute('aria-expanded', open);
+        });
+        document.querySelectorAll('.nav-links a').forEach(function (a) {
+            a.addEventListener('click', function () {
+                nav.classList.remove('menu-open');
+                menuBtn.setAttribute('aria-expanded', false);
+            });
+        });
         var auroraBtn = document.querySelector('.aurora-toggle');
         auroraBtn.setAttribute('aria-pressed', document.documentElement.getAttribute('data-aurora') === 'on');
         auroraBtn.addEventListener('click', function () {

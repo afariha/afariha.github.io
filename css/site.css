@@ -222,6 +222,7 @@ h1, h2, h3 { color: var(--ink); line-height: 1.25; margin: 0; }
   cursor: pointer;
 }
 .aurora-toggle:hover { background: var(--bg-soft); color: var(--ink); }
+.menu-toggle { display: none; }
 .aurora-toggle svg { width: 17px; height: 17px; }
 :root[data-aurora="on"] .aurora-toggle { color: var(--accent); border-color: var(--accent); }
 
@@ -538,6 +539,45 @@ a:hover .icon { transform: translateY(-1px) scale(1.12); box-shadow: 0 3px 8px r
 
 /* ---------- Responsive ---------- */
 
+/* Phone and tablet: links move into a drop-down opened by the menu button */
+@media (max-width: 900px) {
+  .menu-toggle {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    margin-left: 8px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .menu-toggle svg { width: 18px; height: 18px; }
+  .menu-toggle .close { display: none; }
+  .site-nav.menu-open .menu-toggle .bars { display: none; }
+  .site-nav.menu-open .menu-toggle .close { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 16px 14px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+  .site-nav.menu-open .nav-links { display: flex; }
+  .nav-links a { padding: 10px 12px; font-size: 16px; }
+  .nav-links a:hover { transform: none; }
+  .brand { display: block; }
+}
+
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 32px; }
   .profile-photo { width: 200px; }
@@ -548,7 +588,5 @@ a:hover .icon { transform: translateY(-1px) scale(1.12); box-shadow: 0 3px 8px r
 
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
-  .brand { display: none; }
-  .nav-links a { padding: 6px 9px; font-size: 14px; }
   .scroll-box { padding-left: 32px; padding-right: 12px; }
 }
