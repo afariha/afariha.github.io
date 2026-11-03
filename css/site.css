@@ -55,7 +55,7 @@
   --nav-bg: rgba(43, 46, 50, .9);
   --accent-hover: #5fdad4;
   --on-accent: #062221;
-  --social-bg: #e8eef0;
+  --social-bg: #4a4f55;
   --scroll-track: #3b4045;
   --scroll-thumb: #666d75;
   --scroll-thumb-hover: #5f7378;
@@ -84,7 +84,7 @@
     --nav-bg: rgba(43, 46, 50, .9);
     --accent-hover: #5fdad4;
     --on-accent: #062221;
-    --social-bg: #e8eef0;
+    --social-bg: #4a4f55;
     --scroll-track: #3b4045;
     --scroll-thumb: #666d75;
     --scroll-thumb-hover: #5f7378;
@@ -291,15 +291,15 @@ h1, h2, h3 { color: var(--ink); line-height: 1.25; margin: 0; }
 .social a {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: 1px solid var(--line);
   background: var(--social-bg);
   transition: transform .15s, box-shadow .15s;
 }
 .social a:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-.social img { width: 20px; height: 20px; object-fit: contain; }
+.social img { width: 32px; height: 32px; object-fit: contain; }
 
 .intro h1 { font-family: var(--serif); font-size: 42px; font-weight: 600; letter-spacing: -.01em; }
 
