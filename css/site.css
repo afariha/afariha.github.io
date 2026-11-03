@@ -113,8 +113,9 @@ body {
 
 /* ---------- Aurora background (off by default; toggled from the nav) ---------- */
 
-:root { --aurora-1: rgba(45, 212, 191, .45); --aurora-2: rgba(56, 189, 248, .38); --aurora-3: rgba(167, 139, 250, .32); }
-:root[data-theme="dark"] { --aurora-1: rgba(45, 212, 191, .32); --aurora-2: rgba(56, 132, 248, .30); --aurora-3: rgba(139, 92, 246, .28); }
+/* Real aurora hues: oxygen green, blue-teal, violet-magenta, and the deep oxygen red at the top */
+:root { --aurora-1: rgba(52, 211, 120, .42); --aurora-2: rgba(34, 184, 207, .34); --aurora-3: rgba(192, 92, 220, .30); --aurora-4: rgba(229, 62, 82, .28); }
+:root[data-theme="dark"] { --aurora-1: rgba(52, 230, 120, .32); --aurora-2: rgba(34, 170, 210, .28); --aurora-3: rgba(186, 80, 230, .28); --aurora-4: rgba(235, 60, 80, .26); }
 :root[data-aurora="on"] body { position: relative; isolation: isolate; }
 :root[data-aurora="on"] body::before,
 :root[data-aurora="on"] body::after {
@@ -129,12 +130,14 @@ body {
 :root[data-aurora="on"] body::before {
   background:
     radial-gradient(42% 32% at 20% 25%, var(--aurora-1), transparent 70%),
+    radial-gradient(30% 20% at 45% 6%, var(--aurora-4), transparent 70%),
     radial-gradient(36% 28% at 75% 15%, var(--aurora-2), transparent 70%);
   animation: aurora-a 6s ease-in-out infinite alternate;
 }
 :root[data-aurora="on"] body::after {
   background:
     radial-gradient(40% 32% at 65% 70%, var(--aurora-3), transparent 70%),
+    radial-gradient(34% 24% at 85% 40%, var(--aurora-4), transparent 70%),
     radial-gradient(32% 26% at 30% 80%, var(--aurora-2), transparent 70%);
   animation: aurora-b 8s ease-in-out infinite alternate;
 }
