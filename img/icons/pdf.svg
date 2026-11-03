@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cf8a8a"/><stop offset="1" stop-color="#a85d5d"/></linearGradient></defs>
+  <rect width="24" height="24" rx="6" fill="url(#g)"/>
+  <path d="M8 4.5h5.5L17 8v10.5a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1z" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 4.5V8H17" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.6" font-family="Arial,Helvetica,sans-serif" font-size="5" font-weight="700" fill="#fff" text-anchor="middle">PDF</text>
+</svg>

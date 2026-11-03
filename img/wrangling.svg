@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <!-- messy table: ragged, missing, and bad cells -->
+  <rect x="7" y="17" width="20" height="30" rx="3" fill="#fff" fill-opacity=".15" stroke="#fff" stroke-opacity=".75" stroke-width="1.6" stroke-dasharray="3 2"/>
+  <rect x="10" y="21" width="9" height="3" rx="1.5" fill="#fff" fill-opacity=".85"/>
+  <rect x="21" y="21" width="3" height="3" rx="1.5" fill="#fff" fill-opacity=".85"/>
+  <rect x="12" y="28" width="4" height="3" rx="1.5" fill="#fff" fill-opacity=".85"/>
+  <rect x="18" y="28" width="6" height="3" rx="1.5" fill="#fca5a5"/>
+  <rect x="10" y="35" width="13" height="3" rx="1.5" fill="#fff" fill-opacity=".85"/>
+  <rect x="14" y="42" width="5" height="3" rx="1.5" fill="#fca5a5"/>
+  <!-- transform arrow with sparkle -->
+  <path d="M29.5 32h6m-3-3.2 3.2 3.2-3.2 3.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 18.5l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="#fef08a"/>
+  <!-- clean table -->
+  <rect x="38" y="17" width="20" height="30" rx="3" fill="#fff" fill-opacity=".22" stroke="#fff" stroke-width="2"/>
+  <path d="M38 24.5h20M38 32h20M38 39.5h20M48 17v30" stroke="#fff" stroke-opacity=".75" stroke-width="1.4"/>
+  <path d="M38 17h20v7.5H38z" fill="#fff" fill-opacity=".9"/>
+  <!-- check -->
+  <circle cx="54" cy="47" r="5.5" fill="#22c55e" stroke="#fff" stroke-width="1.6"/>
+  <path d="M51.6 47.1l1.7 1.7 3.2-3.4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
